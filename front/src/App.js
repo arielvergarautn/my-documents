@@ -1,6 +1,15 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { loadUser } from './actions/userAction';
 import './styles/app.scss';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadUser());
+  }, [])
+
   return (
     <div className="App">
       <h1>Hello world h1</h1>
@@ -9,7 +18,7 @@ function App() {
       <h4>Hello world h4</h4>
       <a href="#">Hello world</a>
       <p>Hello world p</p>
-      <input type="text" value='Hello world' />
+      {/* <input type="text" value='Hello world' /> */}
     </div>
   );
 }

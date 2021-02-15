@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import exampleReducer from './exampleReducer';
+import filesReducer from './filesReducer';
+import userReducer from './userReducer';
 
 const rootReducer = combineReducers({
-    example: exampleReducer,
+    files: filesReducer,
+    user: userReducer,
     //MORE REDUCERS
 });
 
