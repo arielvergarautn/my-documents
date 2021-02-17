@@ -3,8 +3,6 @@ import { getFiles } from '../data';
 
 export const loadElements = (userId) => async (dispatch) => {
 
-    console.log(userId)
-
     //IS LOADING
     dispatch({
         type: 'LOADING_FILES'

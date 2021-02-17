@@ -5,8 +5,6 @@ import { loadElements } from './filesAction';
 
 export const loadUser = () => async (dispatch) => {
 
-    console.log("hola")
-
     //IS LOADING
     dispatch({
         type: 'LOADING_USER'

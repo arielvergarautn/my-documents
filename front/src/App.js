@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { loadUser } from './actions/userAction';
+import Home from './components/Home';
 import './styles/app.scss';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <a href="#">Hello world</a>
       <p>Hello world p</p>
       {/* <input type="text" value='Hello world' /> */}
+      <Home />
     </div>
   );
 }
